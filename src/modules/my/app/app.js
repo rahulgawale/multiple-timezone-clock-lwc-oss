@@ -3,8 +3,8 @@ import SLDSLightningElement from 'my/sldsLightningElement';
 export default class App extends SLDSLightningElement {
     time = new Date();
 
-    title = 'Multi timezone clock';
-    refreshInterval = 'second';
+    title = 'Multiple Timezone Clock';
+    refreshInterval = 'minute';
 
     /**
      * Getter for the features property
