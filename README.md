@@ -1,6 +1,6 @@
 # lwc-multi-zone-clock
 
-Here will be some information about the app.
+Hello There! I have created a simple Lightning Web Component Open Source App to display a mutltiple timezone clocks. Here is the live version of my app : https://rahulgawale.github.io/multiple-timezone-clock-lwc-oss/
 
 ## How to start?
 
