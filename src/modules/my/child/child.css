@@ -1,0 +1,16 @@
+.clock {
+    font-size: 3rem;
+    text-align: center;
+    color: grey;
+}
+
+.date {
+    text-align: center;
+    color: grey;
+    font-size: 1rem;
+}
+
+.footer {
+    color: grey;
+    font-size: 1rem;
+}
