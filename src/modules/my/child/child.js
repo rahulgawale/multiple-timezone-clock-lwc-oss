@@ -27,7 +27,7 @@ export default class Child extends SLDSLightningElement {
     set time(value) {
         let optionsMilitary = {
             hour12: this.is12Hours,
-            hour: '2-digit',
+            hour: 'numeric',
             minute: '2-digit'
         };
 
@@ -35,10 +35,20 @@ export default class Child extends SLDSLightningElement {
             optionsMilitary.second = '2-digit';
         }
 
-        this._time = value.toLocaleString('en-US', {
-            ...optionsMilitary,
-            timeZone: this.timeZone
-        });
+        let [hh, mm] = value
+            .toLocaleString('en-US', {
+                ...optionsMilitary,
+                timeZone: this.timeZone
+            })
+            .split(':');
+
+        if (parseInt(hh, 10) === 24) {
+            hh = '00';
+        }
+
+        this._time =
+            hh === '00' && mm === '00' ? '24:00' : (hh +":"+ mm).replace(/^24/, '00');
+
         let dateOptions = {
             year: 'numeric',
             month: '2-digit',
