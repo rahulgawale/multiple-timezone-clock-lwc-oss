@@ -1,10 +1,10 @@
 //import { LightningElement } from 'lwc';
-import SLDSLightningElement from 'my/sldsLightningElement';
+import SLDSLightningElement from "my/sldsLightningElement";
 export default class App extends SLDSLightningElement {
     time = new Date();
 
-    title = 'Multiple Timezones Clock';
-    refreshInterval = 'minute';
+    title = "Multiple Timezones Clock";
+    refreshInterval = "minute";
 
     /**
      * Getter for the features property
@@ -12,44 +12,76 @@ export default class App extends SLDSLightningElement {
     get clocks() {
         return [
             {
-                timeZone: 'America/New_York',
-                city: 'New York',
-                is12Hours: false
+                timeZone: "America/New_York",
+                city: "New York",
+                is12Hours: false,
+                footerNote: "America/New York"
             },
             {
-                timeZone: 'Etc/GMT',
-                city: 'London/GMT',
-                is12Hours: false
+                timeZone: "US/Central",
+                city: "Chicago",
+                is12Hours: false,
+                footerNote: "America/Chicago"
             },
             {
-                timeZone: 'US/Central',
-                city: 'Chicago',
-                is12Hours: false
+                timeZone: "America/Hermosillo",
+                city: "Denver",
+                is12Hours: false,
+                footerNote: "America/Denver"
             },
             {
-                timeZone: 'HST',
-                city: 'Hawaii',
-                is12Hours: false
+                timeZone: "America/Los_Angeles",
+                city: "San Francisco",
+                is12Hours: false,
+                footerNote: "America/San Francisco"
             },
             {
-                timeZone: 'Asia/Chongqing',
-                city: 'Philippines',
-                is12Hours: false
+                timeZone: "HST",
+                city: "Honolulu",
+                is12Hours: false,
+                footerNote: "Hawaii/Honolulu"
             },
             {
-                timeZone: 'Asia/Kolkata',
-                city: 'Pune',
-                is12Hours: false
+                timeZone: "Asia/Tokyo",
+                city: "Tokyo",
+                is12Hours: false,
+                footerNote: "Japan/Tokyo"
             },
             {
-                timeZone: 'Etc/GMT+2',
-                city: 'South Africa/Johannesburg',
-                is12Hours: false
+                timeZone: "Asia/Hong_Kong",
+                city: "Hong Kong",
+                is12Hours: false,
+                footerNote: "Honk Kong"
             },
             {
-                timeZone: 'Etc/GMT+1',
-                city: 'Frankfurt',
-                is12Hours: false
+                timeZone: "Africa/Maputo",
+                city: "Manila",
+                is12Hours: false,
+                footerNote: "Philippines/Manila"
+            },
+            {
+                timeZone: "Asia/Kolkata",
+                city: "Pune",
+                is12Hours: false,
+                footerNote: "India/Pune"
+            },
+            {
+                timeZone: "Etc/GMT+2",
+                city: "Johannesburg",
+                is12Hours: false,
+                footerNote: "South Africa/Johannesburg"
+            },
+            {
+                timeZone: "Etc/GMT+1",
+                city: "Frankfurt",
+                is12Hours: false,
+                footerNote: "Germany/Frankfurt"
+            },
+            {
+                timeZone: "GMT",
+                city: "London",
+                is12Hours: false,
+                footerNote: "UK/London"
             }
         ];
     }
@@ -57,7 +89,7 @@ export default class App extends SLDSLightningElement {
     intervalId;
 
     get interval() {
-        return this.refreshInterval === 'minute' ? 60000 : 1000;
+        return this.refreshInterval === "minute" ? 60000 : 1000;
     }
 
     connectedCallback() {

@@ -1,10 +1,12 @@
 <template>
     <my-card title={city}>
-        <div class="clock">{time}</div>
-        <div class="date slds-m-around_xxx-small">{weekday}</div>
-        <div class="date slds-m-around_xxx-small">{date}</div>
+        <div class={themeClass}>
+            <div class="clock">{time}</div>
+            <div class="date slds-m-around_xxx-small">{weekday}</div>
+            <div class="date slds-m-around_xxx-small">{date}</div>
+        </div>
         <div slot="footer" class="footer">
-            {timeZone}
+            {footerNote}
         </div>
     </my-card>
 </template>
