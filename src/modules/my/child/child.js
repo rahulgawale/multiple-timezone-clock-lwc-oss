@@ -14,10 +14,11 @@ export default class Child extends SLDSLightningElement {
     is12Hours = false;
 
     @api
-    refreshInterval = 'second';
+    refreshInterval;
 
     _time;
     date;
+    weekday;
 
     @api
     get time() {
@@ -45,6 +46,14 @@ export default class Child extends SLDSLightningElement {
         };
         this.date = value.toLocaleString('en-US', {
             ...dateOptions,
+            timeZone: this.timeZone
+        });
+
+        let weekdayOptions = {
+            weekday: 'long'
+        };
+        this.weekday = value.toLocaleString('en-US', {
+            ...weekdayOptions,
             timeZone: this.timeZone
         });
     }
