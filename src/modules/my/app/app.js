@@ -99,6 +99,6 @@ export default class App extends SLDSLightningElement {
     }
 
     disconnectedCallback() {
-        clearInterval(this.intervalID);
+        clearInterval(this.intervalId);
     }
 }
