@@ -54,7 +54,7 @@ export default class App extends SLDSLightningElement {
                 footerNote: "Honk Kong"
             },
             {
-                timeZone: "Africa/Maputo",
+                timeZone: "Etc/GMT-8",
                 city: "Manila",
                 is12Hours: false,
                 footerNote: "Philippines/Manila"
@@ -66,7 +66,7 @@ export default class App extends SLDSLightningElement {
                 footerNote: "India/Pune"
             },
             {
-                timeZone: "Etc/GMT+2",
+                timeZone: "Africa/Johannesburg",
                 city: "Johannesburg",
                 is12Hours: false,
                 footerNote: "South Africa/Johannesburg"
@@ -75,13 +75,121 @@ export default class App extends SLDSLightningElement {
                 timeZone: "Etc/GMT+1",
                 city: "Frankfurt",
                 is12Hours: false,
-                footerNote: "Germany/Frankfurt"
+                footerNote: "Europe/Berlin" /* Germany/Frankfurt */
             },
             {
                 timeZone: "GMT",
                 city: "London",
                 is12Hours: false,
                 footerNote: "UK/London"
+            },
+            {
+                timeZone: "Asia/Bahrain",
+                city: "Bahrain",
+                is12Hours: false,
+                footerNote: "Bahrain"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Paris",
+                is12Hours: false,
+                footerNote: "Paris/France"
+            },
+            {
+                timeZone: "Etc/GMT-11",
+                city: "Sydney",
+                is12Hours: false,
+                footerNote: "Sydney/Australia"
+            },
+            {
+                timeZone: "Etc/GMT-11",
+                city: "Melbourne",
+                is12Hours: false,
+                footerNote: "Melbourne/Australia"
+            },
+            {
+                timeZone: "Etc/GMT-2",
+                city: "Israel",
+                is12Hours: false,
+                footerNote: "Israel"
+            },
+            {
+                timeZone: "Etc/GMT-2",
+                city: "Greece",
+                is12Hours: false,
+                footerNote: "Greece"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Italy",
+                is12Hours: false,
+                footerNote: "Italy"
+            },
+            {
+                timeZone: "Etc/GMT-7",
+                city: "Phuket",
+                is12Hours: false,
+                footerNote: "Phuket/Thailand"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Morocco",
+                is12Hours: false,
+                footerNote: "Morocco"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Madrid",
+                is12Hours: false,
+                footerNote: "Madrid/Spain"
+            },
+            {
+                timeZone: "Etc/GMT-3",
+                city: "Moscow",
+                is12Hours: false,
+                footerNote: "Moscow/Russia"
+            },
+            {
+                timeZone: "Etc/GMT-2",
+                city: "Centurion",
+                is12Hours: false,
+                footerNote: "Centurion/South Africa"
+            },
+            {
+                timeZone: "Etc/GMT-8",
+                city: "Shanghai",
+                is12Hours: false,
+                footerNote: "Shanghai/China"
+            },
+            {
+                timeZone: "Etc/GMT-8",
+                city: "Taiwan",
+                is12Hours: false,
+                footerNote: "Taiwan"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Montpellier",
+                is12Hours: false,
+                footerNote: "Montpellier/France"
+            },
+            {
+                timeZone: "Etc/GMT-1",
+                city: "Marcé",
+                is12Hours: false,
+                footerNote: "Marcé/France"
+            },
+            {
+                timeZone: "Etc/GMT+4",
+                city: "Puerto Rico",
+                is12Hours: false,
+                footerNote: "Puerto Rico"
+            },
+            {
+                timeZone: "Etc/GMT+3",
+                city: "São Paulo",
+                is12Hours: false,
+                footerNote: "São Paulo/Brazil"
             }
         ];
     }
